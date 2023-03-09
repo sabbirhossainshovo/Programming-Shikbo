@@ -1,0 +1,585 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* navbar start  */
+.nav{
+    background-color: darkcyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav > ul{
+display: flex;
+margin-right: 50px;
+}
+.nav > ul > li{
+   list-style: none;
+   margin: 70px 0px;
+}
+.nav > ul > li > a{
+text-decoration: none;
+color: aquamarine;
+font-size: 18px;
+padding: 12px 40px;
+border: 1px solid aquamarine;
+border-radius: 4px;
+transition: 0.5s;
+}
+.nav > ul > li > a:hover{
+    background-color: rgb(1, 103, 103);
+}
+
+/* start open  */
+
+.open{
+    margin-top: 12px;
+    position: absolute;
+    width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: scaley(0);
+    transform-origin: bottom;
+}
+.open > li{
+    background-color: darkcyan;
+    list-style: none;
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid aquamarine;
+    border-radius: 4px;
+    box-shadow: 10px 10px 20px darkcyan;
+}
+.open > li > a{
+text-decoration: none;
+color: aquamarine;
+font-size: 18px;
+}
+.open > li:hover{
+    background-color: rgb(1, 103, 103);
+}
+.nav > ul > li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+}
+.logo{
+    color: aquamarine;
+    font-size: 30px;
+    margin-left: 50px;
+}
+.Sabbir{
+    font-size: 70px;
+}
+/* navbar end  */
+/* hero satart  */
+.main{
+    text-align: center;
+    background-image: url(project.jpg);
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero{
+    padding: 100px 0;
+}
+.hero > h2{
+    background-color: rgba(0, 139, 139, 0.66);
+    width: 400px;
+    font-size: 40px;
+    margin: 30px auto;
+    padding: 20px 50px;
+    border-radius: 10px;
+    color: aquamarine;
+}
+.hero > h4{
+    font-size: 20px;
+    color: rgba(29, 87, 234, 0.562);
+}
+.hero > h3{
+    color: rgba(0, 0, 255, 0.66);
+}
+.button{
+    font-size: 18px;
+    background-color: darkcyan;
+    padding: 10px 30px;
+    margin-top: 20px;
+    color: aquamarine;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: white;
+    color: darkcyan;
+}
+.icon > a{
+    text-decoration: none;
+}
+.icon > a > i{
+    font-size: 30px;
+    border: 1px solid darkcyan;
+    padding: 10px 10px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 1.3;
+    margin: 0px 10px;
+    background-color: rgba(0, 139, 139, 0.397);
+    transition: 0.7s;
+   
+}
+.icon > a > i:hover{
+background-color: rgb(255, 255, 255);
+transform: rotate(360deg);
+}
+.prand{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    padding: 100px;
+    justify-content: space-between;    
+}
+.box1{
+text-align: center;
+width: 300px;
+padding: 20px 10px;
+transition: 0.5s;
+}
+.box1 > h2{
+    margin: 20px 0;
+}
+.box1 > i{
+    font-size: 40px;
+}
+.box1:hover{
+    box-shadow: 5px 5px 15px darkcyan;
+}
+/* 2nd section start  */
+.smart-taitel{
+    width: 200px;
+    margin: auto;
+    font-size: 23px;
+position: relative;}
+.smart-taitel > h2{
+    
+    text-align: center;
+   
+}
+.smart-taitel > h2::after{
+    
+        content: "";
+        top: 70px;
+        left: 52px;
+        width: 100px;
+        height: 5px;
+        background-color: darkcyan;
+        position: absolute;
+    }
+
+.smart-prand{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+    align-items: center;
+    padding: 100px 50px;
+}
+.smart-ariya-text{
+    width: 500px;
+}
+.smart-ariya-text > h2{
+margin: 20px 0;
+}
+.smart-ariya-text > h4{
+    color: darkcyan;
+}
+.smart-ariya-text > a{
+    text-decoration: none;
+    background-color: darkcyan;
+    padding: 15px 40px;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    color: aquamarine;
+}
+.smart-ariya-text > a:hover{
+    background-color: rgb(58, 176, 176);
+}
+/* end 2nd section  */
+/* start 3rd section  */
+.services-taital{
+    text-align: center;
+}
+.services-taital > h2{
+    font-size: 40px;
+}
+.services-prand{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 80px 0;
+    grid-gap: 20px;
+}
+.services-ariya-contant{
+    width: 1000px;
+    margin: auto;
+}
+.services-1{
+    text-align: center;
+    background-color: aquamarine;
+    padding: 30px 50px;
+    transition: 0.5s;
+}
+.services-1 > h3{
+    margin: 15px 0;
+}
+.services-1 > i{
+    font-size: 40px;
+    color: rgb(35, 64, 151);
+}
+.services-1:hover{
+    background-color: rgba(0, 139, 139, 0.635);
+}
+/* end 3rd section  */
+/* start 4th section  */
+
+.Pricing-area-containg{
+    width: 1000px;
+    margin: auto;
+}
+
+.Pricing-area-taital{
+    text-align: center;
+    padding-bottom: 100px;
+    font-size: 40px;
+}
+.Pricing-area-prand{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+    
+}
+.single-cird-img{
+    width: 300px;
+}
+.single-cird-img > img{
+    max-width: 100%;
+}
+.single-cird{
+    width: 300px;
+    box-shadow: 10px 10px 25px darkcyan;
+    text-align: center;
+    
+}
+.single-cird > h2{
+margin: 20px;
+}
+.Pricing-dolar{
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    margin: 15px 20px;
+    padding: 15px 0;
+}
+.dolar{
+    font-size: 30px;
+}
+.dolars{
+    color: gray;
+}
+.Pricing-button{
+    background-color: darkcyan;
+    font-size: 17px;
+    padding: 10px 35px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Pricing-button:hover{
+    background-color: rgb(255, 255, 255);
+}
+.single-cird > a{
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+/* end 4th section  */
+/* start 5th section  */
+
+
+.testimonials-ariya-taital{
+    text-align: center;
+    padding-bottom: 100px ;
+}
+.testimonials-ariya-taital > h2{
+    font-size: 40px;
+}
+.testimonials-ariya-taital > h4{
+    letter-spacing: 0.3cm;
+    color: gray;
+    padding: 20px;
+}
+
+.testimonials-ariya-contant{
+    width: 1000px;
+    margin: auto;
+    padding: 100px 0 ;
+}
+.testimonials-ariya-prand{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 35px;
+    
+}
+.testimonials-single-cird{
+    display: flex;
+    align-items: center;
+    background-color: darkcyan;
+    padding: 10px 30px;
+    box-shadow: 5px 5px 20px darkcyan;
+}
+.testimonials-single-cird-img{
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.testimonials-single-cird-img > img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+.testimonials-ariya-span{
+   margin-bottom: 5px;
+   font-size: 22px;
+   display: inline-block;
+}
+.Testiamonials-icon{
+    color: rgb(255, 183, 0);
+    margin-top: 5px;
+    font-size: 22px;
+}
+/* end 5th section  */
+/*  start 6th section  */
+.parallax-section{
+
+   background-image: url(parallax.jpg);
+   background-repeat: no-repeat;
+    padding: 70px 0;
+    margin-bottom: 50px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.parallax-prand{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+   
+}
+.parallax-single-cird > i {
+    font-size: 30px;
+}
+.parallax-single-cird h2{
+    font-size: 40px;
+    margin: 20px 0;
+}
+/* end 6th section  */
+/* start 7th section  */
+.blog-content{
+    width: 1000px;
+    margin: 80px auto;
+}
+.blog-prand{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+.blog-single-img:hover .blog-icone{
+opacity: 1;
+background-color: rgba(0, 0, 0, 0.516);
+}
+
+    
+.blog-img{
+    max-width: 100%;
+    height: 250px;
+    transition: 0.5s;
+}
+.blog-icone{
+    position: absolute;
+    top: 0;
+    left: 0;
+   width: 100%;
+   height: 100%;
+   display: grid;
+   place-content: center;
+   text-align: center;
+   color: white;
+   font-size: 22px;
+   opacity: 0;
+   transition: 0.5s;
+   
+}
+.blog-single-img{
+    position: relative;
+overflow: hidden;
+}
+.blog-single-img:hover .blog-img{
+    transform: scale(1.5);
+
+}
+.blog-icone > i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+/* end 7th section  */
+/* start 8th section  */
+
+
+.Conact-container{
+    width: 1000px;
+    margin: auto;
+    padding-bottom:100px ;
+    
+}
+.from-prand{
+   background-color: #eaecf0;
+   display: flex; 
+}
+.from-tag{
+    width: 600px;
+}
+.from-text{
+    display: flex;
+}
+
+.from-text input{
+width: 200px;
+height: 30px;
+margin: 0 20px;
+border: none;
+padding: 0 10px;
+}
+.from-text h4{
+    margin: 40px 20px 10px 23px;
+}
+.Subject-taital{
+    margin: 40px 20px 10px 23px; 
+}
+.subject-input{
+    width: 85%;
+    height: 30px;
+    margin: 0 20px;
+    border: none;
+    padding: 0 10px;
+}
+.from-textarea{
+    width: 85%;
+    border: none;
+    height: 100px;
+    margin: 0 20px;
+    padding:0 10px ;
+}
+.from-bouton{
+    background-color: darkcyan;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin:20px 0px 0px 20px ;
+}
+.from-assress-icon-prand{
+    display: flex;
+    padding-top:50px ;
+    justify-content: space-between;
+
+}
+.from-sibgle-cirs{
+    text-align: center;
+}
+.from-sibgle-cirs > i{
+    background-color: darkcyan;
+    color: rgb(255, 255, 255);
+    padding: 20px ;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.from-sibgle-cirs span{
+    font-weight: bold;
+}
+
+/* footre section  */
+footer{
+    background-color: rgb(14, 14, 86);
+color: gray;
+}
+
+
+.footer-container{
+    width: 1000px;
+    margin: auto;
+}
+
+.footer-single-aitam-prand{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-single-aitam{
+    width: 220px;
+    overflow: hidden;
+}
+.footer-single-aitam > h3{
+    color: white;
+    margin: 50px 0px 20px 0px;
+}
+.fotter-fastdiv-p1{
+    margin-bottom: 20px;
+}
+.fotter-fastdiv-p2{
+    margin: 10px 0;
+}
+.footer-single-aitam i{
+    color: white;
+}
+.footer-single-aitam:nth-child(2) p{
+    margin: 10px 0;
+}
+.footer-single-aitam:nth-child(3) p{
+    margin: 10px 0;
+}
+.footer-single-aitam:nth-child(4) p{
+    margin: 10px 0;
+}
+.footer-single-aitam:nth-child(4) a{
+    color: brown;
+    text-decoration: none;
+}
+.footermenuitam > ul{
+display: flex;
+justify-content: center;
+}
+.footermenuitam > ul > li{
+list-style: none;
+margin: 20px;
+
+}
+.footermenuitam > ul > li > a{
+text-decoration: none;
+color: rgb(128, 125, 125);
+font-size: 20px;
+font-weight: bold;
+}
+.footermenuitam > p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.dak{
+    margin-top: 30px;
+}
